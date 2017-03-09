@@ -1,0 +1,137 @@
+/* Tablet desktop 992 SMALL*/
+@media (max-width: 992px) {
+	/*general*/
+	.section-text {
+		padding: 20px 130px 30px;
+	}
+
+	/*welcome page*/
+	.landing-text h1 {
+		font-size: 4em;
+		margin-top: 90px;
+	}
+
+	/*navbar*/
+	.navbar {
+		display: none;
+	}
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		background-color: white;
+		opacity: 0.9;
+		overflow: hidden;
+		padding-top: 60px;
+		transition: 0.5s;
+	}
+	.sidenav a {
+		letter-spacing: 2px;
+		text-align: center;
+		padding: 10px 0;
+		text-decoration: none;
+		font-size: 1.5em;
+		color: #464646;
+		display: block;
+		transition: 0.3s;
+	}
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+		text-decoration: none;
+	}
+	#nav-logo {
+		font-size: 1.5em;
+		margin-top: 15px;
+	}
+	.nav-icons a {
+		font-size: 1.8em;
+		padding: 5px 5px 15px;
+		display: inline-block !important;
+	}
+	span .fa {
+		display: block;
+		position: fixed;
+		z-index: 1000;
+		left: 30px;
+		top: 15px;
+		color: #464646;
+		font-size: 1.8em;
+		cursor: pointer;
+	}
+	#main {
+		transition: width 1s;
+	}
+
+	/*instagram*/
+	#newsletter img {
+		display: none;
+	}
+}
+
+/* MOBILE max 767px XS*/
+@media (max-width: 768px) {
+	/*general*/
+	.section-text {
+		padding: 20px;
+	}
+
+	/*landing page*/
+	.landing-text h1 {
+		font-size: 3em;
+		margin-top: 150px;
+	}
+	.landing-text h2 {
+		font-size: 1em;
+	}
+
+	/*about*/
+	.about-text {
+		padding: 0 30px;
+	}
+
+	/*gallery*/
+	#gallery .square {
+		padding: 0px;
+	}
+	#myModal > div {
+		width: 100%;
+		margin: 80px auto;
+	}
+	#myModal > div img {
+		width: 100%;
+	}
+	#myModal > div > div > div {
+		padding: 0;
+	}
+
+	/*newsletter*/
+	#newsletter > div > div > div > div.col-sm-6.pd-90 > div > div.col-xs-8 {
+		padding: 0 5px;
+	}
+	#newsletter > div > div > div > div.col-sm-6.pd-90 > div > div.col-xs-4 {
+		padding: 0;
+	}
+	#newsletter button {
+		padding: 4px 10px;	
+	}
+	#newsletter > div > div > div > div:nth-child(3) {
+		padding: 0 0 30px 0;
+		display: block;
+		margin: auto;
+	}
+
+	/*contact*/
+	#contact .section-title {
+		padding: 0 40px;
+	}
+	#contact .section-text {
+		padding: 20px 30px 30px;
+	}
+}

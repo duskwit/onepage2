@@ -1,0 +1,416 @@
+/*general*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow-x: hidden;
+}
+body #main {
+	font-family: 'Oswald', sans-serif;
+	color: #282828;
+}
+.container-centering {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; 
+}
+.container-centering-half {
+	min-height: 50vh;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; 
+}
+.section {
+	font-family: 'Oswald', sans-serif;
+	padding: 100px 0;
+	min-height: 100vh;
+	color: #282828;
+	z-index: 10;
+}
+.half-section {
+	padding: 100px 0;
+	min-height: 50vh;
+}
+.section-title {
+	font-family: 'Oswald';
+	padding: 0;
+	margin: 0;
+	font-size: 3em;
+	font-weight: 300;
+	text-align: center;
+	color: #282828;
+}
+.section-text {
+	font-family: 'Oswald';
+	font-size: 1em;
+	text-align: center;
+	font-weight: 300;
+	line-height: 25px;
+	letter-spacing: 1.5px;
+	padding: 10px 250px 30px;
+	color: #282828;
+}
+.section-line {
+	height: 2px;
+	width: 60px;
+	color: #282828;
+	background-color: #282828;
+	display: block;
+	margin: 40px auto 20px; 
+}
+.bg-grey {
+	background-color: #f9f9f9;
+}
+.bg-rose {
+	background-color: #ee9989;
+}
+#main a:hover,
+#main a:active,
+#main a:focus {
+	text-decoration: none;
+}
+.pd-90 {
+	padding: 90px 0;
+}
+#main button {
+	background-color: transparent;
+	padding: 8px 40px;
+	border-color: white;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 1.2em;
+	border-radius: 20px;
+	display: block;
+	margin: 40px auto 0;
+	text-decoration: none;
+}
+#main button:hover {
+	background-color: #b1cbca;
+	border-color: #b1cbca;
+
+	-o-transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+/*navbar*/
+span .fa {
+	display: none;
+}
+#mySidenav {
+	display: none;
+}
+#main > nav > div > div.navbar-header > button {
+	display: none;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-brand p {
+	font-size: 1.1em;
+	padding: 0 10px 0 30px;
+}
+#myNavbar > ul > li > a {
+	color: #282828;
+	letter-spacing: 2px;
+	font-size: 1.1em;
+	font-weight: 100;
+}
+#myNavbar > ul > li:hover a {
+	background-color: #ee9989;
+
+	-webkit-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+}
+#myNavbar > ul > li.active > a {
+	background-color: #ee9989;
+}
+#myPage nav.affix-top {
+  padding: 5px 30px;
+  background-color: transparent;
+  color: white;
+  border: none;
+
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+#myPage nav.affix-top a {
+	color: white;
+}
+#myPage nav.affix {
+    padding: 5px 30px;
+    top: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    border:none;
+    opacity: 0.9;
+
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+#myPage > div.wrapper > nav {
+	padding: 15px 30px;
+    top: 0;
+    width: 100%;
+    background-color: #282828;
+    border:none;
+    opacity: 0.9;
+
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+#myPage > div.wrapper > nav > div > div.navbar-header > button > i {
+	background-color: transparent;
+	color: white;
+	padding: 0 4px;
+	font-size: 1.5em;
+}
+
+/*landing page*/
+#myPage > div.modal-backdrop.fade.in {
+	z-index: -10;
+}
+.background-wrap {
+	position: fixed;
+	z-index: -1000;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+#video-bg-elem {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+}
+.landing-text {
+	z-index: -1000;
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+#myPage > div.modal-backdrop.fade.in {
+	z-index: -1000;
+}
+.landing-text h1 {
+	text-align: center;
+	font-size: 5.7em;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #fff;
+	padding-top: 20%;
+	margin-bottom: 10px;
+}
+.landing-text h2 {
+	text-align: center;
+	font-size: 1.6em;
+	letter-spacing: 6px;
+	color: white;
+	font-weight: 300;
+}
+
+/*content*/
+#content {
+	height: auto;
+	color: white;
+	position: absolute;
+	margin-top: 100vh;
+	background-color: white;
+	width: 100%;
+	z-index: -100;
+}
+
+/*about*/
+#about .section {
+	padding-bottom: 0;
+}
+.about-title {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+.about-text {
+	padding: 20px 0;
+	font-size: 1em;
+}
+#about .img-bottom img {
+	width: 100%;
+}
+
+/*gallery*/
+.image{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+
+    -o-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+.image:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+.image img{
+    position:absolute;
+    height: 100%;
+}
+#gallery .square {
+	padding: 20px;
+}
+#gallery-container > div > div > div > a > img {
+	padding: 0;
+	border-radius: 0px;
+}
+.modal-body {
+	z-index: 1000;
+}
+#myModal {
+	overflow: hidden;
+}
+#myModal > div > div > h3 {
+	text-align: center;
+	padding: 5px 0;
+}
+#myModal > div > div > button {
+	padding: 10px 20px 0 0;
+}
+#myModal > div {
+	width: 700px;
+	margin: 80px auto;
+}
+.image-text {
+	font-family: 'Oswald';
+	font-size: 1em;
+	text-align: center;
+	font-weight: 300;
+	line-height: 25px;
+	letter-spacing: 1.5px;
+	padding: 0 40px;
+	color: #282828;
+}
+
+/*testimonials*/
+#testimonials .half-section {
+	padding: 0 0 80px;
+}
+.testimonials-section img {
+	width: 90%;
+}
+.testimonials-section {
+	color: #282828;
+	font-family: 'Oswald';
+}
+.stars .fa {
+	font-size: 1.5em;
+	padding: 0 3px;
+	margin-bottom: 20px;
+}
+.client-name {
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+
+/*newsletter*/
+#newsletter .half-section{
+	padding: 0;
+}
+#newsletter img {
+	width: 100%;
+}
+#newsletter > div > div > p,
+#newsletter > div > div > div:nth-child(1) > div > p {
+	padding: 30px 0;
+}
+#newsletter input {
+	border-radius: 0px;
+	background-color: transparent;
+	border: 1.5px solid #ee9989;
+}
+#newsletter button {
+	font-family: 'Oswald';
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	background-color: #ee9989;
+	border-color: #ee9989;
+	color: white;
+	border-radius: 0px;
+	padding: 4px 40px;	
+}
+#newsletter > div > div > div > div:nth-child(3) {
+	padding: 60px 0 0 80px;
+}
+
+
+/*contact*/
+.contact-section {
+    background: rgba(0, 0, 0, 0) url("img/contact.jpg") no-repeat fixed 0 0 / cover;
+    min-height: 100vh;
+}
+#contact > div > div > div > div > div > p {
+	padding: 30px 0;
+}
+#contact > div > div > div > div > div > div {
+	padding: 5px;
+}
+#contact input,
+#contact textarea,
+#contact button {
+	background: transparent;
+	border-radius: 0px;
+	border-color: #464646;
+}
+#contact button {
+	padding: 6px 50px;
+	font-size: 1.2em;
+}
+#contact button:hover {
+	background-color: #ee9989;
+	border-color: #ee9989;
+	color: white;
+}
+
+/*footer*/
+footer {
+	font-family: 'Oswald';
+	height: auto;
+	background-color: #464646;
+	width: 100%;
+	padding: 40px 30px;
+}
+footer .social-text-logo {
+	font-size: 1.2em;
+}
+footer .social-text {
+	margin: 0;
+	letter-spacing: 2px;
+	font-weight: 200;
+}
+footer .copy p {
+	font-weight: 100;
+	font-size: 1.1em;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+}
+footer a:hover {
+	text-decoration: none;
+	color: grey;
+}
+footer > div > div.row.text-center.copy > a > i {
+	font-size: 1.6em;
+	margin-bottom: 20px;
+}

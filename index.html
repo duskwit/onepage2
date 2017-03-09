@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Type 2 Floristeria | Really Web Design</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <!-- css -->
+	  <link rel="stylesheet" href="style.css">   
+	  <link rel="stylesheet" href="css/responsive.css">
+
+	  <!-- font -->
+	  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+
+	  <!-- fontawesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> 
+
+    <!-- bootstrap -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <!-- bootstrap v3.3.6 css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	</head>
+ 	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+ 		<div id="main">
+
+ 			<!-- navbar start -->
+ 			<nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="0">
+ 			  <div class="container-fluid">
+ 			    <div class="col-sm-12 text-center">
+ 			    <div class="collapse navbar-collapse" id="myNavbar">
+ 			      <ul class="nav navbar-nav ">
+ 			        <li><a href="#about">about</a></li>
+ 			        <li><a href="#gallery">gallery</a></li>
+ 			        <li><a href="#testimonials">clients</a></li>
+ 			        <a class="navbar-brand" href="#myPage">
+ 			          <p>FLOWER<strong>POWER</strong></p>
+ 			        </a>
+ 			        <li><a href="#newsletter">newsletter</a></li>
+ 			        <li><a href="#contact">contact</a></li>
+ 			      </ul> 
+ 			    </div>
+ 			   	</div>
+ 			  </div>
+ 			</nav>
+ 			<!-- navbar end -->
+
+ 			<!-- navbar mobile start -->
+ 			<div id="mySidenav" class="sidenav">
+ 			  <a href="#home" onclick="closeNav()">home</a>
+ 			  <a href="#about" onclick="closeNav()">about</a>
+ 			  <a href="#gallery" onclick="closeNav()">gallery</a>
+ 			  <a href="#testimonials" onclick="closeNav()">testimonials</a>
+ 			  <a href="#newsletter" onclick="closeNav()">newsletter</a>
+ 			  <a href="#contact" onclick="closeNav()">contact</a>
+ 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 			  <hr id="nav-line">
+ 			  <div class="row text-center">
+ 			  	<p id="nav-logo">FLOWER<strong>POWER</strong></p>
+ 			  </div>
+ 			  <div class="nav-icons text-center">
+ 			    <a href="#" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+ 			    <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+ 			    <a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+ 			  </div>
+ 			  <div class="row text-center">
+ 			  	<p class="address-text">Carrer de Cartegena 100,</p>
+ 			  	<p class="address-text">09087 Barcelona</p>
+ 			  	<p class="address-text">+34 789 567 345</p>
+ 			  	<p class="address-text">info@flowerpower.com</p>
+ 			  </div>
+ 			</div>
+ 			<span id="openIcon" onclick="openNav()">
+ 			  <i id="openIcon" class="fa fa-bars" aria-hidden="true"></i>
+ 			</span>
+ 			<!-- navbar mobile end -->
+
+ 			<!-- landing page start  -->
+			<div class="background-wrap">
+				<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop">
+					<source src="vid/vid.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="landing-text">
+				<h1>Best way to say you care</h1>
+				<h2>Where flowers are our inspiration to create lasting memories</h2>
+				<a href="#about"><button class="btn btn-default btn-basic" type="submit">GET STARTED</button></a>
+			</div>
+			</div>
+			<!-- landing page end -->
+
+			<!-- main content starts here -->
+			<div id="content">
+				
+				<!-- about start -->
+				<div id="about">
+				  <div class="about-section section">
+				    <div class="container">
+				      <div class="row">
+				        <div class="col-sm-12 about-text">
+				          <h3 class="section-title">FLOWER<strong>POWER</strong></h3>
+				          <hr class="section-line">
+				          <p class="section-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				        </div>
+				      </div>
+				      <div class="row">
+				      	<div class="col-sm-4 text-center">
+				      		<p class="about-title">Who are we?</p>
+				      		<img src="img/about1.jpg" class="img-circle" width="180" height="180">
+				      		<p class="about-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+				      	</div>
+				      	<div class="col-sm-4 text-center">
+				      		<p class="about-title">What we offer?</p>
+				      		<img src="img/about2.jpg" class="img-circle" width="180" height="180">
+				      		<p class="about-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+				      	</div>
+				      	<div class="col-sm-4 text-center">
+				      		<p class="about-title">Quality products</p>
+				      		<img src="img/about3.jpg" class="img-circle" width="180" height="180">
+				      		<p class="about-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+				      	</div>
+				      </div>
+				      <div class="col-sm-12 img-bottom">
+				      	<img src="img/flowers-about.png">
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- about end -->
+
+				<!-- gallery section start -->
+				<div id="gallery">
+				  <div class="section gallery-section bg-grey">
+				    <div class="container">
+				      <h3 class="section-title">OUR GARDEN</h3>
+				      <hr class="section-line">
+				      <p class="section-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				      <div id="gallery-container">
+				        <div class="container">
+				            <div class="col-xs-6 col-md-4 square">
+				              <div class="image">
+				                <a title="Image 1" href="#"><img class="thumbnail img-responsive" src="img/gal1.jpg"></a>
+				              </div>
+				            </div>
+				            <div class="col-xs-6 col-md-4 square">
+				              <div class="image">
+				                <a title="Image 2" href="#"><img class="thumbnail img-responsive" src="img/gal2.jpg"></a>
+				              </div>
+				            </div>
+				            <div class="col-xs-6 col-md-4 square">
+				              <div class="image">
+				                <a title="Image 3" href="#"><img class="thumbnail img-responsive" src="img/gal3.jpg"></a>
+				              </div>
+				            </div>
+				            <div class="col-xs-6 col-md-4 square">
+				              <div class="image">
+				                <a title="Image 4" href="#"><img class="thumbnail img-responsive" src="img/gal4.jpg"></a>
+				              </div>
+				            </div>
+				            <div class="col-xs-6 col-md-4 square">
+				              <div class="image">
+				                <a title="Image 5" href="#"><img class="thumbnail img-responsive" src="img/gal5.jpg"></a>
+				              </div>
+				            </div>
+				            <div class="col-xs-6 col-md-4 square">
+				              <div class="image">
+				                <a title="Image 6" href="#"><img class="thumbnail img-responsive" src="img/gal6.jpg"></a>
+				              </div>
+				            </div>
+				            <div class="col-xs-6 col-md-4 square">
+				              <div class="image">
+				                <a title="Image 7" href="#"><img class="thumbnail img-responsive" src="img/gal7.jpg"></a>
+				              </div>
+				            </div>
+				            <div class="col-xs-6 col-md-4 square">
+				              <div class="image">
+				                <a title="Image 8" href="#"><img class="thumbnail img-responsive" src="img/gal8.jpg"></a>
+				              </div>
+				            </div>
+				            <div class="col-xs-6 col-md-4 square">
+				              <div class="image">
+				                <a title="Image 9" href="#"><img class="thumbnail img-responsive" src="img/gal9.jpg"></a>
+				              </div>
+				            </div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- modal -->
+				<div tabindex="-1" class="modal fade" id="myModal" role="dialog">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <button class="close" type="button" data-dismiss="modal">×</button>
+				      <h3 class="modal-title">Heading</h3>    
+				      <div class="modal-body"></div>
+				      <div class="modal-footer"><h4 class="modal-text"></h4></div>
+				    </div>
+				  </div>
+				</div>
+				<!-- gallery section end -->
+
+				<!-- testimonials section start -->
+				<div id="testimonials">
+					<div class="testimonials-section half-section">
+						<div class="break testimonials-section parallex-testimonial">
+		          <div class="container">
+		          	<div class="col-sm-12 text-center">
+		          		<img src="img/flowers-test.png">
+		          	</div>
+		            <div class="row row-centered">
+		              <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+		                <div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<h3 class="section-title">Happy Clients</h3>
+												<hr class="section-line">
+												<p class="section-text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."</p>
+												<div class="stars text-center">
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p class="client-name text-center">MAGGIE ROTH</p>
+											</div>
+											<div class="item">
+												<h3 class="section-title">Happy Clients</h3>
+												<hr class="section-line">
+												<p class="section-text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."</p>
+												<div class="stars text-center">
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+												</div>
+												<p class="client-name text-center">JOE DOE</p>
+											</div>
+											<div class="item">
+												<h3 class="section-title">Happy Clients</h3>
+												<hr class="section-line">
+												<p class="section-text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."</p>
+												<div class="stars text-center">
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p class="client-name text-center">ANNA HATH</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- testimonials end -->
+
+				<!-- contact start -->
+				<div id="contact">
+					<div class="contact-section section">
+						<div class="container">
+							<div class="row">
+								<div class="row">
+									<div class="col-xs-12 col-sm-6">
+										<h3 class="section-title text-left">Write to us</h3>
+										<p class="section-text text-left">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."</p>
+										<div class="col-xs-2 text-right">
+											<p>NAME:</p>
+										</div>
+										<div class="col-xs-10">
+											<input class="form-control" id="name" name="name" type="text" required>
+										</div>
+										<div class="col-xs-2 text-right">
+											<p>PHONE:</p>
+										</div>
+										<div class="col-xs-10">
+											<input class="form-control" id="phone" name="phone" type="text" required>
+										</div>
+										<div class="col-xs-2 text-right">
+											<p>E-MAIL:</p>
+										</div>
+										<div class="col-xs-10">
+											<input class="form-control" id="email" name="email" type="text" required>
+										</div>
+										<div class="col-xs-2 text-right">
+											<p>MESSAGE:</p>
+										</div>
+										<div class="col-xs-10">
+										  <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+										</div>
+										<div class="col-sm-12 text-right">
+										  <button class="btn btn-default" type="submit">Send</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- contact end -->
+
+				<!-- newsletter start -->
+				<div id="newsletter">
+					<div class="newsletter-section half-section">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-6 col-md-4 pd-90">
+									<h3 class="section-title text-left">Newsletter</h3>
+									<p class="section-text text-left">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."</p>
+									<div class="row">
+									<div class="col-xs-8">
+										<input class="form-control" id="newsletter" name="newsletter" placeholder="put your e-mail here" type="text" required>
+									</div>
+									<div class="col-xs-4">
+										<button class="btn btn-default" type="submit">Subscribe</button>
+									</div>
+								</div>
+								</div>
+								<div class="col-sm-4 text-left">
+									<img src="img/flowers-news.png">
+								</div>
+								<div class="col-sm-6 col-sm-4 text-center">
+									<!-- InstaWidget -->
+									<a href="https://instawidget.net/v/user/reallywebdesign" id="link-d1fe6c1d36c66913771628c696aea056fa05511c48535da160daf208d014bfca">@reallywebdesign</a>
+									<script src="https://instawidget.net/js/instawidget.js?u=d1fe6c1d36c66913771628c696aea056fa05511c48535da160daf208d014bfca&width=250px"></script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- newsletter end -->
+
+				<!-- footer start -->
+				<footer>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-6 text-left">
+								<p class="social-text-logo">FLOWER<strong>POWER</strong></p>
+								<a href="#"><p class="social-text">facebook</p></a>
+								<a href="#"><p class="social-text">instagram</p></a>
+								<a href="#"><p class="social-text">twitter</p></a>
+								<a href="#"><p class="social-text">tumblr</p></a>
+							</div>
+							<div class="col-xs-6 text-right">
+								<p class="address-text">Carrer de Cartegena 100,</p>
+								<p class="address-text">09087 Barcelona</p>
+								<p class="address-text">+34 789 567 345</p>
+								<p class="address-text">info@flowerpower.com</p>
+							</div>
+						</div>
+						<div class="row text-center copy">
+							<a href="#myPage"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+							<p>Copyright 2017 Really Web Design</p>
+						</div>
+					</div>
+				</footer>
+				<!-- footer end -->
+				</div>
+			</div>
+			<!-- main content ends here -->
+
+			<!-- main js -->
+			<!-- navside scroll -->
+			<script src="js/navside.js"></script>
+			<!-- smooth scroll -->
+			<script src="js/smoothScroll.js"></script>
+			<!-- menu side -->
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBguiqqm44YfEIL2By618SmB9P-h13nLYQ&callback=initMap">
+			</script>
+			<script src="js/map.js"></script>
+	</body>
+</html>
