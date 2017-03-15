@@ -77,8 +77,11 @@
 
 /* MOBILE max 767px XS*/
 @media (max-width: 768px) {
-	#video-bg-elem {
-		display: none;
+	.landing-page {
+		background: rgba(0, 0, 0, 0) url("img/back.jpg") no-repeat fixed 0 0 / cover;
+		min-height: 100vh;
+		padding: 0;
+		margin: 0;
 	}
 	/*general*/
 	.section-text {
